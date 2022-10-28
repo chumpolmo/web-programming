@@ -1,6 +1,7 @@
 <?php
 /**
  * Function: Add a Controller Database Connection.
+ * Thank you: https://phppot.com/php/simple-php-shopping-cart/
  * */
 
 class DBController {

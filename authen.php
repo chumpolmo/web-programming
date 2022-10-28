@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require_once("./denied.php");
+
 require_once("./controller/DBController.php");
 $db_handle = new DBController();
 ?>
