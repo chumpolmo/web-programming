@@ -1,0 +1,39 @@
+<!-- comment -->
+<nav class="navbar navbar-expand-lg bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="{{ asset('images/hen.png') }}" title="Beritokai" style="width: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">เกี่ยวกับเว็บไซต์</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ติดต่อเรา</a>
+        </li>
+        @if (Session::has('keyLoggedin'))
+        <li class="nav-item">
+          <a class="nav-link" href="/footballclub">ข้อมูลสโมสร</a>
+        </li>
+        @endif
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            สโมสรฟุตบอล
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Liverpool (L)</a></li>
+            <li><a class="dropdown-item" href="#">Manchester United</a></li>
+            <li><a class="dropdown-item" href="#">Manchester City</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
